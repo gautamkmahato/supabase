@@ -10,7 +10,8 @@ function Profile() {
             const { data: { session }, error } = await supabase.auth.getSession();
             console.log(session)
             console.log(session.user?.email); 
-            setuser(session.user?.email)
+            setuser(session.user?.email);
+            console.log(error)
         }
         getSession()
     },[]);

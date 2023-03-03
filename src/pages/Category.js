@@ -1,13 +1,11 @@
-import React, { useEffect, useState } from 'react'
-import { useNavigate } from 'react-router-dom';
+import React from 'react'
 import Card from '../components/Card'
-import supabase from '../configs/supabaseConfig';
 
 
 function Category() {
 
-    const [user, setuser] = useState('');
-    const navigate = useNavigate();
+    //const [user, setuser] = useState('');
+    //const navigate = useNavigate();
 
     const imgUrlDB = {
         img1: `https://lanbtferudsqjlmnbifi.supabase.co/storage/v1/object/public/imagedb/back22.jpg`,
@@ -31,18 +29,18 @@ function Category() {
     //     navigate("/login");
     // }
 
-    useEffect(() =>{
-      const getSession = async() =>{ 
-        const { data: { user } } = await supabase.auth.getUser(); 
-          if(!user){
-            console.log(user);
-            return <h3>Hello</h3>
-          }else{
-            setuser(user);
-          }
-        }
-      getSession();
-    },[]);
+    // useEffect(() =>{
+    //   const getSession = async() =>{ 
+    //     const { data: { user } } = await supabase.auth.getUser(); 
+    //       if(!user){
+    //         console.log(user);
+    //         return <h3>Hello</h3>
+    //       }else{
+    //         setuser(user);
+    //       }
+    //     }
+    //   getSession();
+    // },[]);
 
     
 

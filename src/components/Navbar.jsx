@@ -67,7 +67,7 @@ function Navbar() {
                                         <ul className='dropdown' style={{display: display}}>
                                         <li><i className="fa fa-user-circle-o"></i><a href="/dashboard">Profile</a></li>
                                         <li><i className="fa fa-cog"></i><a href="/logout">Settings</a></li>
-                                        <li><i className="fa fa-sign-out"></i><a className='nav-logout' onClick={getSignout}>Logout</a></li>
+                                        <li><i className="fa fa-sign-out"></i><p className='nav-logout' onClick={getSignout}>Logout</p></li>
                                     </ul>
                                 }
                             </div>

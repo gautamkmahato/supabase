@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect } from 'react'
 import supabase from '../configs/supabaseConfig';
-import { Auth } from '@supabase/auth-ui-react'
 
 function Demo() {
 
@@ -23,6 +22,7 @@ function Demo() {
             const { data: { session }, error } = await supabase.auth.getSession();
             console.log(session)
             console.log(session.user)
+            console.log(error)
         }
         getSession()
     },[]);

@@ -44,6 +44,7 @@ function NewPage() {
 
     const handlePlatform = (selectedOption) =>{
         console.log(selectedOption);
+        console.log(setplatform)
         setSelectedOption(selectedOption)
     }
 
