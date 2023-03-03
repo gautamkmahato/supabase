@@ -1,0 +1,110 @@
+body{
+    font-family: 'Roboto', sans-serif;
+}
+  /*single problem page style*/
+  .desc-container{
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  .post-container {
+    display: flex;
+  }
+  .section-1 {
+    width: 60%;
+    margin-bottom: 0px;
+  }
+  .section-2 {
+    display: flex;
+    width: 40%;
+  }
+  .section-1 p{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.75rem;
+  }
+  .difficulty{
+    padding: 10px;
+  }
+  .difficulty p{
+    background-color: rgb(178, 254, 178);
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: rgba(0, 175, 155);
+    font-weight: 600;
+  }
+  .platform{
+    padding: 10px;
+    
+  }
+  .platform p{
+    /* background-image: linear-gradient(to right, rgb(57, 57, 0) , rgb(255, 255, 0)); */
+    /* background-image: linear-gradient(to right, rgb(57, 57, 0) , rgb(255, 255, 0)); */
+    /* background-image: linear-gradient(to right, rgb(172, 164, 1),rgb(255, 94, 0), rgb(255, 142, 43)); */
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+  }
+  .platform a{
+    text-decoration: none;
+  }
+  .status{
+    padding: 10px;
+  }
+  .category{
+    padding: 10px;
+  }
+  .category p{
+    padding: 6px 14px;
+    border-radius: 12px;
+    font-size: 14px;
+    /* color: rgba(0, 175, 155); */
+    font-weight: 600;
+    background-color: rgb(221, 221, 221);
+  }
+  .like{
+    padding: 10px;
+  }
+  .dislike{
+    padding: 10px;
+  }
+  .platform{
+    padding-bottom: 15px;
+  }
+  .platform img{
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+    border-radius: 50%;
+    margin-left: 10px;
+    margin-top: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
+    
+  }
+  .platform img:hover{
+    background-color: rgb(245, 245, 245);
+  }
+  .company{
+    display: flex;
+    border-bottom: 1px solid rgb(220, 220, 220);
+    padding-bottom: 15px;
+  }
+  .company img{
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: 2px solid rgb(228, 228, 228);
+    padding: 5px;
+    border-radius: 50%;
+  }
+  
+  .input_output{
+    background-color: rgb(234, 234, 234);
+    padding: 10px 20px;
+    font-size: 17px;
+    line-height: 1.75rem;
+    border-radius: 8px;
+  }
