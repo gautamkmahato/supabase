@@ -78,6 +78,11 @@ function NewPage() {
 
     }
 
+    const handleFormat = () =>{
+        const formated = JSON.stringify(JSON.parse(inputOutput), null, 4);
+        setinputOutput(formated);
+    }
+
     return (
         <div className='form-container'>
             <h3>{formError}</h3>
@@ -152,8 +157,9 @@ function NewPage() {
                 </li>
                 <li>
                     <label>Input Output</label>
-                    <textarea className='textarea' onChange={(e) => {setinputOutput(e.target.value)}} placeholder="Enter Description" />
+                    <input onChange={(e) => {setinputOutput(e.target.value)}} placeholder="Enter Description" />
                 </li>
+                <button onClick={handleFormat}>format</button>
                 <li>
                     <label>Platform</label>
                     <Select options={platformAPI} defaultValue={selectedOption} onChange={handlePlatform} />
