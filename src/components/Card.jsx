@@ -9,7 +9,7 @@ function Card(props) {
             <div className="card-content">
                 <h3>{props.title}</h3>
                 <div className='card-data'>
-                    <p>Questions <span style={{fontWeight: '600'}}>30</span></p>
+                    <p>Questions <span style={{fontWeight: '600'}}>{props.totalCount}</span></p>
                     <button onClick={()=>navigate(`${props.link}/${props.subcategory}`)}>Start Learning</button>
                 </div>
             </div>

@@ -8,6 +8,7 @@ function Array() {
 
     return (
         <div> 
+            <h3 style={{marginLeft: "7%", marginTop:"30px" }}>Array</h3>
             <div className="card-container">
                 <Card img={imgUrlDB.img4} title='Array' link="/problems/array" subcategory='array'/>
                 <Card img={imgUrlDB.img4} title='Sliding Window' link="/problems/array" subcategory='sliding window'/>

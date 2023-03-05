@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-import supabase from '../configs/supabaseConfig';
+import React from 'react'
 
 function Demo() {
 
@@ -17,15 +16,7 @@ function Demo() {
     //     }
     //   getSession();
 
-    useEffect(() =>{
-        const getSession = async () =>{
-            const { data: { session }, error } = await supabase.auth.getSession();
-            console.log(session)
-            console.log(session.user)
-            console.log(error)
-        }
-        getSession()
-    },[]);
+
 
     return (
         <div>

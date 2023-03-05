@@ -51,7 +51,7 @@ function Navbar() {
                     <a href="/category" className="item">Category</a>
                     <a href="/problems" className="item">Problems</a>
                     <a href="/" className="item">Explore</a>
-                    <a href="/" className="item">About</a>
+                    <a href="/about" className="item">About</a>
                 </div>
                 <div className="right-item-section">
                 
@@ -67,7 +67,7 @@ function Navbar() {
                                         <ul className='dropdown' style={{display: display}}>
                                         <li><i className="fa fa-user-circle-o"></i><a href="/dashboard">Profile</a></li>
                                         <li><i className="fa fa-cog"></i><a href="/logout">Settings</a></li>
-                                        <li><i className="fa fa-sign-out"></i><p className='nav-logout' onClick={getSignout}>Logout</p></li>
+                                        <li><p className='nav-logout' onClick={getSignout}><i className="fa fa-sign-out"></i> Logout</p></li>
                                     </ul>
                                 }
                             </div>

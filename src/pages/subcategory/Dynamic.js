@@ -8,6 +8,7 @@ function Dynamic() {
 
     return (
         <div> 
+            <h3 style={{marginLeft: "7%", marginTop:"30px" }}>Dynamic Programming</h3>
             <div className="card-container">
                 <Card img={imgUrlDB.img4} title='Fabonacci Series' link="/problems/dynamic-programming" subcategory='fabonacci series'/>
                 <Card img={imgUrlDB.img4} title='0/1 Knapsack' link="/problems/dynamic-programming" subcategory='01 knapsack'/>

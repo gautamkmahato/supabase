@@ -15,12 +15,13 @@ function Signup() {
         e.preventDefault();
         try{
             setloading(true);
-            const { data, error } = await supabase.auth.signUp({
+            const { error } = await supabase.auth.signUp({
                 email: email,
                 password: password,
             })
-            console.log(data);
-            console.log(error)
+            if(error){
+                alert(error);
+            }
         } catch(error){
             console.log(error)
         } finally{

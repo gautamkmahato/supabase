@@ -16,7 +16,6 @@ function Description() {
     const [errorTag, seterrorTag] = useState();
     const [platform, setplatform] = useState();
     const [color1, setcolor1] = useState();
-    const [color2, setcolor2] = useState();
     const [textColor, settextColor] = useState();
     const [bgColor, setbgColor] = useState();
 
@@ -30,20 +29,20 @@ function Description() {
             .eq('id',id)
 
             if(error){
-                console.log(error);
+                //console.log(error);
                 seterrorTag("Something went wrong...")
             }
             if(data){
-                console.log(data)
+                //console.log(data)
                 setarr(data);
                 //console.log(data[0].input_output[0].input)
-                console.log(data[0].platform)
+                //console.log(data[0].platform)
                 const obj = JSON.parse(data[0].platform)
-                console.log(obj.value)
-                console.log(data[0].company[0])
+                //console.log(obj.value)
+                //console.log(data[0].company[0])
                 // const obj2 = JSON.parse(data[0].company[0])
                 // console.log(obj2.value)
-                console.log(data[0].difficulty)
+                //console.log(data[0].difficulty)
                 setplatform(obj.value);
                 getColor(obj.value);
                 getDifficultyColor(data[0].difficulty);
@@ -72,18 +71,15 @@ function Description() {
     }
 
     const getColor = (record) =>{
-        console.log(record)
+        //console.log(record)
         if(record === 'CodeStudio'){
             setcolor1('#D84F00');
-            setcolor2('#FF5E00');
         }
         else if(record === "Leetcode"){
-            setcolor1('#FFF200');
-            setcolor2('#ACA400');
+            setcolor1('yellow');
         }
         else if(record === "GeeksForGeeks"){
             setcolor1('#FF006E');
-            setcolor2('#FEB2CF');
         }
     }
 
@@ -104,7 +100,7 @@ function Description() {
 
     const handleCompany = (res) =>{
         const obj2 = JSON.parse(res)
-        console.log(obj2.value)
+        //console.log(obj2.value)
         //setcompany(obj2.value)
         return obj2.value;
     }
@@ -125,7 +121,9 @@ function Description() {
                                 <p>{val.category}</p>
                             </div>
                             <div className='platform'>
-                                <a href='google.com' rel="noreferrer" target='_blank'><p style={{backgroundImage: `linear-gradient(to right, ${color1}, ${color2})`}}>{platform}</p></a>
+                                <a href={val.platform_url} rel="noreferrer" target='_blank'>
+                                    <p style={{ border: `2px solid ${color1}`, paddingRight:"10px"}}><i className="fa fa-caret-square-o-right">{"  "+platform}</i></p>
+                                </a>
                             </div>
                         </div>
                     </div>

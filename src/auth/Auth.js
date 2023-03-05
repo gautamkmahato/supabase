@@ -16,14 +16,14 @@ const AuthProvider = ({ children }) => {
             setSession(session)
             setUser(session?.user)
             setLoading(false);
-            console.log(session)
+            //console.log(session)
         };
 
-        const { data: listener } = supabase.auth.onAuthStateChange((event, session) => {
+        const { data: listener } = supabase.auth.onAuthStateChange((session) => {
             setSession(session);
             setUser(session?.user)
             setLoading(false);
-            console.log(event, session)
+            //console.log(event, session)
         });
 
         setData();

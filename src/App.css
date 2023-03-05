@@ -15,25 +15,47 @@ body {
   border-collapse: collapse;
 }
 
-.table td,
 .table th {
   padding: 12px 15px;
   border: 1px solid #ddd;
   text-align: center;
   font-size: 16px;
+  background-color: #F7FAFC;
+  color: #858585;
 }
 
-.table th {
-  background-color: #92c9e6;
-  color: #ffffff;
+.table td {
+  padding: 0px 15px;
+  border: 1px solid #ddd;
+  text-align: center;
+  font-size: 16px;
 }
 
 .table tbody tr:nth-child(even) {
-  background-color: #d1e8f5;
+  background-color: #F7FAFC;
 }
 .problems-table{
   margin-top: 40px;
 }
+.problem-title:hover{
+  color: rgb(255, 118, 55);
+  cursor: pointer;
+}
+
+.company{
+  display: flex;
+  border-bottom: 1px solid rgb(220, 220, 220);
+  padding-bottom: 15px;
+}
+.company img{
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  border: 2px solid rgb(228, 228, 228);
+  padding: 5px;
+  border-radius: 50%;
+}
+
 /*responsive*/
 
 @media (max-width: 500px) {

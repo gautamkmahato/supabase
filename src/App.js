@@ -20,6 +20,7 @@ import SubProblems from './pages/SubProblems';
 import Profile from './pages/Profile';
 import AdminRoute from './components/AdminRoute';
 import Home from './pages/Home';
+import About from './pages/About';
 
 function App() {
   //console.log(supabase); 
@@ -33,7 +34,8 @@ function App() {
       <AuthProvider>
         <Navbar />
         <Routes>
-          <Route path="/" element={<Home />} />  
+          <Route path="/" element={<Home />} /> 
+          <Route path="/about" element={<About />} />  
           <Route path="/category" element={<Category />} />
           <Route path="/problems" element={<Problems />} />
           <Route path="/problems/dynamic-programming" element={<Dynamic />} />

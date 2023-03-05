@@ -1,0 +1,76 @@
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    background: linear-gradient(180deg, rgba(227, 255, 248, 0) 82.08%, rgba(227, 255, 248, 0.38) 100%);
+    min-height: 100vh;    
+}
+
+.page {
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 35px;
+}
+
+main {
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+h1 {
+    width: 500px;
+    font-family: 'Mulish', sans-serif;
+    font-size: 40px;
+    line-height: 56px;
+    color: #1F1534;
+    font-weight: normal;
+}
+
+h1 span {
+    color: #2b825b;
+    font-weight: bold;
+    font-size: 48px;
+}
+
+section p {
+    font-size: 14px;
+    line-height: 28px;
+    color: #7d7987;
+    margin: 40px 0;
+}
+
+.button {
+    color: white;
+    text-transform:uppercase;
+    font-family: 'Open Sans', sans-serif;
+    background: #2b825b;
+    padding: 15px ;
+    border: 0px;
+    border-radius: 4px;
+    font-weight: 500;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.button:hover {
+    background: #5aa087;
+}
+
+footer {
+    font-size:14px;
+    line-height:28px;
+    text-align: center;
+    margin-top: 160px;
+}
+
+footer a {
+    font-weight:bold;    
+}
+
+#balls {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}

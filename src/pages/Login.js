@@ -21,11 +21,11 @@ function Login() {
                 email: email,
                 password: password,
             })
-            console.log(data.session);
-            console.log(error);
+            //console.log(data.session);
+            //console.log(error);
             
             if(data.session){
-                navigate("/demo")
+                navigate("/")
             }
             else{
                 alert(error)

@@ -42,11 +42,15 @@ body{
     /* background-image: linear-gradient(to right, rgb(57, 57, 0) , rgb(255, 255, 0)); */
     /* background-image: linear-gradient(to right, rgb(57, 57, 0) , rgb(255, 255, 0)); */
     /* background-image: linear-gradient(to right, rgb(172, 164, 1),rgb(255, 94, 0), rgb(255, 142, 43)); */
+    /* backgroundImage: `linear-gradient(to right, ${color1}, ${color2})`; */
     padding: 6px 14px;
     border-radius: 12px;
     font-size: 14px;
-    color: rgb(255, 255, 255);
-    font-weight: 600;
+    color: rgb(0, 0, 0);
+    
+  }
+  .platform p:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.1);
   }
   .platform a{
     text-decoration: none;
@@ -63,7 +67,7 @@ body{
     font-size: 14px;
     /* color: rgba(0, 175, 155); */
     font-weight: 600;
-    background-color: rgb(221, 221, 221);
+    border: 2px solid black;
   }
   .like{
     padding: 10px;
@@ -90,15 +94,17 @@ body{
   .company{
     display: flex;
     border-bottom: 1px solid rgb(220, 220, 220);
-    padding-bottom: 15px;
+    padding-top: 10px;
+    
   }
   .company img{
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    margin-right: 5px;
     border: 2px solid rgb(228, 228, 228);
     padding: 5px;
     border-radius: 50%;
+    
   }
   
   .input_output{

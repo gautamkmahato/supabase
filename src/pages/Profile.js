@@ -8,10 +8,14 @@ function Profile() {
     useEffect(() =>{
         const getSession = async () =>{
             const { data: { session }, error } = await supabase.auth.getSession();
-            console.log(session)
-            console.log(session.user?.email); 
+            //console.log(session)
+            //console.log(session.user?.email); 
             setuser(session.user?.email);
-            console.log(error)
+            //console.log(error)
+            if(error){
+                // do something
+                alert(error)
+            }
         }
         getSession()
     },[]);
